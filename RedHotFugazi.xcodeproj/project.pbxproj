@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8BF84AF2B0C214300B33B79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84AE2B0C214300B33B79 /* AppDelegate.swift */; };
+		E8BF84B12B0C214300B33B79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84B02B0C214300B33B79 /* SceneDelegate.swift */; };
+		E8BF84B82B0C214400B33B79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BF84B72B0C214400B33B79 /* Assets.xcassets */; };
+		E8BF84BB2B0C214400B33B79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BF84B92B0C214400B33B79 /* LaunchScreen.storyboard */; };
+		E8BF84C62B0C218100B33B79 /* HomeGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84C22B0C218100B33B79 /* HomeGridViewController.swift */; };
+		E8BF84C82B0C218100B33B79 /* HomeGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84C42B0C218100B33B79 /* HomeGridViewModel.swift */; };
+		E8BF84C92B0C218100B33B79 /* HomeGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84C52B0C218100B33B79 /* HomeGridCollectionViewCell.swift */; };
+		E8BF84CB2B0C225700B33B79 /* HomeGridCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84CA2B0C225700B33B79 /* HomeGridCellData.swift */; };
+		E8BF84CD2B0C226200B33B79 /* HomeGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84CC2B0C226200B33B79 /* HomeGridCell.swift */; };
+		E8BF84CF2B0C246100B33B79 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84CE2B0C246100B33B79 /* RootViewController.swift */; };
+		E8BF84D12B0C246B00B33B79 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84D02B0C246B00B33B79 /* RootViewModel.swift */; };
+		E8BF84D32B0C247400B33B79 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84D22B0C247400B33B79 /* Orientation.swift */; };
+		E8BF84D52B0C24C400B33B79 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84D42B0C24C400B33B79 /* ApplicationController.swift */; };
+		E8BF84D72B0C252100B33B79 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84D62B0C252100B33B79 /* Device.swift */; };
+		E8BF84D92B0C2C2D00B33B79 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BF84D82B0C2C2D00B33B79 /* Colors.xcassets */; };
+		E8BF84DE2B0C2E1600B33B79 /* HomeGridContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84DC2B0C2E1600B33B79 /* HomeGridContainerViewController.swift */; };
+		E8BF84DF2B0C2E1600B33B79 /* HomeGridContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8BF84DD2B0C2E1600B33B79 /* HomeGridContainerViewController.xib */; };
+		E8BF84E12B0C3E5A00B33B79 /* HomeGridViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84E02B0C3E5A00B33B79 /* HomeGridViewController+UICollectionViewDelegate.swift */; };
+		E8BF84E32B0C3E6F00B33B79 /* HomeGridViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84E22B0C3E6F00B33B79 /* HomeGridViewController+UICollectionViewDataSource.swift */; };
+		E8BF84E52B0C3F3800B33B79 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84E42B0C3F3700B33B79 /* GridLayout.swift */; };
+		E8BF84E72B0C462900B33B79 /* HomeGridViewController+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84E62B0C462900B33B79 /* HomeGridViewController+UIScrollViewDelegate.swift */; };
+		E8BF84E92B0C488D00B33B79 /* PriorityDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84E82B0C488D00B33B79 /* PriorityDataDownloader.swift */; };
+		E8BF84EB2B0C489600B33B79 /* PriorityDataDownloaderTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84EA2B0C489600B33B79 /* PriorityDataDownloaderTask.swift */; };
+		E8BF84ED2B0C520B00B33B79 /* HomeGridViewModel+PriorityDataDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84EC2B0C520B00B33B79 /* HomeGridViewModel+PriorityDataDownloaderDelegate.swift */; };
+		E8BF84F32B0C5BF800B33B79 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84F22B0C5BF800B33B79 /* LoadingView.swift */; };
+		E8BF84F52B0C5D9A00B33B79 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84F42B0C5D9A00B33B79 /* ErrorView.swift */; };
+		E8BF84F72B0C5FFD00B33B79 /* ClippedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84F62B0C5FFD00B33B79 /* ClippedImageView.swift */; };
+		E8BF84F92B0C798C00B33B79 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BF84F82B0C798C00B33B79 /* FileUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8BF84AB2B0C214300B33B79 /* RedHotFugazi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedHotFugazi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BF84AE2B0C214300B33B79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8BF84B02B0C214300B33B79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8BF84B72B0C214400B33B79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8BF84BA2B0C214400B33B79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8BF84BC2B0C214400B33B79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BF84C22B0C218100B33B79 /* HomeGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeGridViewController.swift; sourceTree = "<group>"; };
+		E8BF84C42B0C218100B33B79 /* HomeGridViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeGridViewModel.swift; sourceTree = "<group>"; };
+		E8BF84C52B0C218100B33B79 /* HomeGridCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		E8BF84CA2B0C225700B33B79 /* HomeGridCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGridCellData.swift; sourceTree = "<group>"; };
+		E8BF84CC2B0C226200B33B79 /* HomeGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGridCell.swift; sourceTree = "<group>"; };
+		E8BF84CE2B0C246100B33B79 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E8BF84D02B0C246B00B33B79 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		E8BF84D22B0C247400B33B79 /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
+		E8BF84D42B0C24C400B33B79 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
+		E8BF84D62B0C252100B33B79 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		E8BF84D82B0C2C2D00B33B79 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E8BF84DC2B0C2E1600B33B79 /* HomeGridContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGridContainerViewController.swift; sourceTree = "<group>"; };
+		E8BF84DD2B0C2E1600B33B79 /* HomeGridContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeGridContainerViewController.xib; sourceTree = "<group>"; };
+		E8BF84E02B0C3E5A00B33B79 /* HomeGridViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeGridViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		E8BF84E22B0C3E6F00B33B79 /* HomeGridViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeGridViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		E8BF84E42B0C3F3700B33B79 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		E8BF84E62B0C462900B33B79 /* HomeGridViewController+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeGridViewController+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		E8BF84E82B0C488D00B33B79 /* PriorityDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityDataDownloader.swift; sourceTree = "<group>"; };
+		E8BF84EA2B0C489600B33B79 /* PriorityDataDownloaderTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityDataDownloaderTask.swift; sourceTree = "<group>"; };
+		E8BF84EC2B0C520B00B33B79 /* HomeGridViewModel+PriorityDataDownloaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeGridViewModel+PriorityDataDownloaderDelegate.swift"; sourceTree = "<group>"; };
+		E8BF84F22B0C5BF800B33B79 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E8BF84F42B0C5D9A00B33B79 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E8BF84F62B0C5FFD00B33B79 /* ClippedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippedImageView.swift; sourceTree = "<group>"; };
+		E8BF84F82B0C798C00B33B79 /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8BF84A82B0C214300B33B79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8BF84A22B0C214300B33B79 = {
+			isa = PBXGroup;
+			children = (
+				E8BF84AD2B0C214300B33B79 /* RedHotFugazi */,
+				E8BF84AC2B0C214300B33B79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8BF84AC2B0C214300B33B79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8BF84AB2B0C214300B33B79 /* RedHotFugazi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8BF84AD2B0C214300B33B79 /* RedHotFugazi */ = {
+			isa = PBXGroup;
+			children = (
+				E8BF84AE2B0C214300B33B79 /* AppDelegate.swift */,
+				E8BF84D42B0C24C400B33B79 /* ApplicationController.swift */,
+				E8BF84B02B0C214300B33B79 /* SceneDelegate.swift */,
+				E8BF84D02B0C246B00B33B79 /* RootViewModel.swift */,
+				E8BF84CE2B0C246100B33B79 /* RootViewController.swift */,
+				E8BF84C42B0C218100B33B79 /* HomeGridViewModel.swift */,
+				E8BF84EC2B0C520B00B33B79 /* HomeGridViewModel+PriorityDataDownloaderDelegate.swift */,
+				E8BF84DC2B0C2E1600B33B79 /* HomeGridContainerViewController.swift */,
+				E8BF84DD2B0C2E1600B33B79 /* HomeGridContainerViewController.xib */,
+				E8BF84E42B0C3F3700B33B79 /* GridLayout.swift */,
+				E8BF84C22B0C218100B33B79 /* HomeGridViewController.swift */,
+				E8BF84E02B0C3E5A00B33B79 /* HomeGridViewController+UICollectionViewDelegate.swift */,
+				E8BF84E22B0C3E6F00B33B79 /* HomeGridViewController+UICollectionViewDataSource.swift */,
+				E8BF84E62B0C462900B33B79 /* HomeGridViewController+UIScrollViewDelegate.swift */,
+				E8BF84C52B0C218100B33B79 /* HomeGridCollectionViewCell.swift */,
+				E8BF84CA2B0C225700B33B79 /* HomeGridCellData.swift */,
+				E8BF84CC2B0C226200B33B79 /* HomeGridCell.swift */,
+				E8BF84D82B0C2C2D00B33B79 /* Colors.xcassets */,
+				E8BF84B72B0C214400B33B79 /* Assets.xcassets */,
+				E8BF84B92B0C214400B33B79 /* LaunchScreen.storyboard */,
+				E8BF84BC2B0C214400B33B79 /* Info.plist */,
+				E8BF84D22B0C247400B33B79 /* Orientation.swift */,
+				E8BF84D62B0C252100B33B79 /* Device.swift */,
+				E8BF84E82B0C488D00B33B79 /* PriorityDataDownloader.swift */,
+				E8BF84EA2B0C489600B33B79 /* PriorityDataDownloaderTask.swift */,
+				E8BF84F22B0C5BF800B33B79 /* LoadingView.swift */,
+				E8BF84F62B0C5FFD00B33B79 /* ClippedImageView.swift */,
+				E8BF84F42B0C5D9A00B33B79 /* ErrorView.swift */,
+				E8BF84F82B0C798C00B33B79 /* FileUtils.swift */,
+			);
+			path = RedHotFugazi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8BF84AA2B0C214300B33B79 /* RedHotFugazi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8BF84BF2B0C214400B33B79 /* Build configuration list for PBXNativeTarget "RedHotFugazi" */;
+			buildPhases = (
+				E8BF84A72B0C214300B33B79 /* Sources */,
+				E8BF84A82B0C214300B33B79 /* Frameworks */,
+				E8BF84A92B0C214300B33B79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedHotFugazi;
+			productName = RedHotFugazi;
+			productReference = E8BF84AB2B0C214300B33B79 /* RedHotFugazi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8BF84A32B0C214300B33B79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E8BF84AA2B0C214300B33B79 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E8BF84A62B0C214300B33B79 /* Build configuration list for PBXProject "RedHotFugazi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8BF84A22B0C214300B33B79;
+			productRefGroup = E8BF84AC2B0C214300B33B79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8BF84AA2B0C214300B33B79 /* RedHotFugazi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8BF84A92B0C214300B33B79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BF84D92B0C2C2D00B33B79 /* Colors.xcassets in Resources */,
+				E8BF84DF2B0C2E1600B33B79 /* HomeGridContainerViewController.xib in Resources */,
+				E8BF84BB2B0C214400B33B79 /* LaunchScreen.storyboard in Resources */,
+				E8BF84B82B0C214400B33B79 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8BF84A72B0C214300B33B79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BF84F72B0C5FFD00B33B79 /* ClippedImageView.swift in Sources */,
+				E8BF84E92B0C488D00B33B79 /* PriorityDataDownloader.swift in Sources */,
+				E8BF84CF2B0C246100B33B79 /* RootViewController.swift in Sources */,
+				E8BF84F92B0C798C00B33B79 /* FileUtils.swift in Sources */,
+				E8BF84C62B0C218100B33B79 /* HomeGridViewController.swift in Sources */,
+				E8BF84CB2B0C225700B33B79 /* HomeGridCellData.swift in Sources */,
+				E8BF84EB2B0C489600B33B79 /* PriorityDataDownloaderTask.swift in Sources */,
+				E8BF84D32B0C247400B33B79 /* Orientation.swift in Sources */,
+				E8BF84D72B0C252100B33B79 /* Device.swift in Sources */,
+				E8BF84E72B0C462900B33B79 /* HomeGridViewController+UIScrollViewDelegate.swift in Sources */,
+				E8BF84CD2B0C226200B33B79 /* HomeGridCell.swift in Sources */,
+				E8BF84D52B0C24C400B33B79 /* ApplicationController.swift in Sources */,
+				E8BF84E32B0C3E6F00B33B79 /* HomeGridViewController+UICollectionViewDataSource.swift in Sources */,
+				E8BF84AF2B0C214300B33B79 /* AppDelegate.swift in Sources */,
+				E8BF84C92B0C218100B33B79 /* HomeGridCollectionViewCell.swift in Sources */,
+				E8BF84E12B0C3E5A00B33B79 /* HomeGridViewController+UICollectionViewDelegate.swift in Sources */,
+				E8BF84D12B0C246B00B33B79 /* RootViewModel.swift in Sources */,
+				E8BF84B12B0C214300B33B79 /* SceneDelegate.swift in Sources */,
+				E8BF84C82B0C218100B33B79 /* HomeGridViewModel.swift in Sources */,
+				E8BF84ED2B0C520B00B33B79 /* HomeGridViewModel+PriorityDataDownloaderDelegate.swift in Sources */,
+				E8BF84F32B0C5BF800B33B79 /* LoadingView.swift in Sources */,
+				E8BF84DE2B0C2E1600B33B79 /* HomeGridContainerViewController.swift in Sources */,
+				E8BF84E52B0C3F3800B33B79 /* GridLayout.swift in Sources */,
+				E8BF84F52B0C5D9A00B33B79 /* ErrorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8BF84B92B0C214400B33B79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8BF84BA2B0C214400B33B79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8BF84BD2B0C214400B33B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8BF84BE2B0C214400B33B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8BF84C02B0C214400B33B79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GG555KD5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RedHotFugazi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.raptis.pest.blaster.RedHotFugazi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8BF84C12B0C214400B33B79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2GG555KD5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RedHotFugazi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.raptis.pest.blaster.RedHotFugazi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8BF84A62B0C214300B33B79 /* Build configuration list for PBXProject "RedHotFugazi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8BF84BD2B0C214400B33B79 /* Debug */,
+				E8BF84BE2B0C214400B33B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8BF84BF2B0C214400B33B79 /* Build configuration list for PBXNativeTarget "RedHotFugazi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8BF84C02B0C214400B33B79 /* Debug */,
+				E8BF84C12B0C214400B33B79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8BF84A32B0C214300B33B79 /* Project object */;
+}
