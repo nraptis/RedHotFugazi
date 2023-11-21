@@ -16,6 +16,7 @@ class HomeGridCollectionViewCell: UICollectionViewCell {
     lazy var hostingController: UIHostingController = {
         let result = UIHostingController(rootView: homeGridCell)
         result.view.translatesAutoresizingMaskIntoConstraints = false
+        result.view.backgroundColor = UIColor.clear
         return result
     }()
     
